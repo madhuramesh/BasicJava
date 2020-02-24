@@ -1,0 +1,16 @@
+//Ti find minimum difference in an array of Integers
+
+public static int minDiff(int[] arr) {
+		int diff = Integer.MAX_VALUE;
+		Arrays.sort(arr);
+		
+		for(int i=0; i<arr.length-1; i++) {
+			for(int j=i+1; j<arr.length; j++) {
+				if (Math.abs(arr[i]-arr[j]) < diff)
+					diff = Math.abs(arr[i]-arr[j]);
+			}
+		}
+		return diff;
+	}
+	
+	
