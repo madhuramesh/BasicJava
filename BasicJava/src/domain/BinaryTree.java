@@ -1,5 +1,5 @@
 package domain;
-
+//Test to push from Eclipse
 public class BinaryTree {
 
 	int data;
